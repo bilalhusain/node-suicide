@@ -1,5 +1,5 @@
 (function() {
-  var showHeartbeat, suicide;
+  var attempt, jump, showHeartbeat, suicide;
   process.on('SIGKILL', function() {
     return process.exit();
   });
@@ -9,6 +9,15 @@
     }, 60 * 1000 / 72);
   };
   module.exports.suicide = suicide = function() {
+    return process.emit('SIGKILL');
+  };
+  module.exports.attempt = attempt = function() {
+    if (Math.random() < 0.5) {
+      return process.emit('SIGKILL');
+    }
+  };
+  module.exports.jump = jump = function() {
+    console.log('jumped off the cliff');
     return process.emit('SIGKILL');
   };
   if (!module.parent) {
