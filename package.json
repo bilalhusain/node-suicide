@@ -1,10 +1,12 @@
 {
-	 "name": "node-suicide"
+	 "name": "suicide"
 	, "version": "0.1.0"
 	, "description": "kills self or the process which has required it"
 	, "author": "Bilal Husain <bilal@bilalhusain.com>"
 	, "main": "./index.js"
-	, "scripts": {
-		"test": "node ./test.js"
-	}
+	, "scripts": { "test": "node ./test.js" }
+	, "repository":
+		{ "type": "git"
+		, "url": "https://github.com/bilalhusain/node-suicide"
+		}
 }
