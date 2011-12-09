@@ -1,0 +1,10 @@
+{
+	 "name": "node-suicide"
+	, "version": "0.1.0"
+	, "description": "kills self or the process which has required it"
+	, "author": "Bilal Husain <bilal@bilalhusain.com>"
+	, "main": "./index.js"
+	, "scripts": {
+		"test": "node ./test.js"
+	}
+}
